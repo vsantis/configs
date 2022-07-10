@@ -36,3 +36,6 @@ map <Leader>ob :Buffers<cr>
 " vim-plug
 map <Leader>pi :PlugInstall<cr>
 map <Leader>pc :PlugClean<cr>
+
+" coc-prettier
+map <Leader>f :Prettier<CR>

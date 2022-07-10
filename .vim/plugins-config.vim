@@ -52,7 +52,12 @@ let g:tmux_navigator_no_mapping=1
 let g:coc_global_extensions = [
       \ 'coc-tsserver',
       \ 'coc-webview',
-      \ 'coc-markdown-preview-enhanced'
+      \ 'coc-markdown-preview-enhanced',
+      \ 'coc-json',
+      \ 'coc-yaml',
+      \ 'coc-html',
+      \ 'coc-prettier',
+      \ 'coc-eslint'
       \]
 autocmd FileType scss setl iskeyword+=@-@
 

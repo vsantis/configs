@@ -14,3 +14,5 @@ set laststatus=2
 set noshowmode
 set clipboard=unnamedplus
 set guicursor=n-v-c-i:block
+
+command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
