@@ -31,6 +31,9 @@ ZSH_THEME="robbyrussell"
 # Uncomment the following line to change how often to auto-update (in days).
 # zstyle ':omz:update' frequency 13
 
+# autocomplete
+# zstyle ':autocomplete:*' min-input 1
+
 # Uncomment the following line if pasting URLs and other text is messed up.
 # DISABLE_MAGIC_FUNCTIONS="true"
 
@@ -70,7 +73,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
