@@ -30,7 +30,6 @@ Plug 'christoomey/vim-tmux-navigator'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'preservim/nerdcommenter'
-
 Plug 'ryanoasis/vim-devicons'
 
 call plug#end()
