@@ -3,6 +3,7 @@ let mapleader=" "
 " shorter commands
 cnoreabbrev tree NERDTreeToggle
 cnoreabbrev find NERDTreeFind
+cnoreabbrev gstatus vertical G
 
 " resize split resize
 nnoremap <Leader>> 10<C-w>>

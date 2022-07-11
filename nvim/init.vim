@@ -27,9 +27,15 @@ set guicursor=n-v-c-i:block
 command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
 
 filetype plugin on
+filetype plugin indent on
 
 " searching
 set hlsearch
 set incsearch
 set ignorecase
 set smartcase
+
+" tabs size
+set expandtab
+set shiftwidth=2
+set tabstop=2
