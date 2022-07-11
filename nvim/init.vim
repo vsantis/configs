@@ -10,8 +10,9 @@ so ~/.vim/plugins-config.vim
 so ~/.vim/maps.vim
 
 "colorscheme NeoSolarized
-colorscheme gruvbox
-let g:gruvbox_contrast_dark = "hard"
+"colorscheme gruvbox
+"let g:gruvbox_contrast_dark = 'hard'
+colorscheme dracula
 highlight Normal ctermbg=NONE
 
 if !has('gui_running')
@@ -21,7 +22,7 @@ endif
 set laststatus=2
 set noshowmode
 set clipboard=unnamedplus
-set guicursor=n-v-c-i:block
+"set guicursor=n-v:block
 "et background=dark
 " prettier
 command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')

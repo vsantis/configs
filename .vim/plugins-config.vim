@@ -24,7 +24,7 @@ let g:lightline = {
       \   'fileformat': 'MyFileformat',
       \   'filename': 'LightlineFileName'
       \ },
-      \ 'colorscheme': 'gruvbox',
+      \ 'colorscheme': 'darcula',
       \ 'subseparator': {
       \   'left': '|',
       \   'right': '|'

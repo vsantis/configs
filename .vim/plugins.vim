@@ -12,6 +12,7 @@ Plug 'itchyny/vim-gitbranch'
 Plug 'morhetz/gruvbox'
 Plug 'shinchu/lightline-gruvbox.vim'
 Plug 'overcache/NeoSolarized'
+Plug 'dracula/vim', { 'name': 'dracula' }
 
 " tree
 Plug 'preservim/nerdtree'
