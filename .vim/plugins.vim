@@ -34,5 +34,6 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'preservim/nerdcommenter'
 Plug 'ryanoasis/vim-devicons'
+Plug 'tpope/vim-fugitive'
 
 call plug#end()

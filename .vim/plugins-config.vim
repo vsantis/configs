@@ -53,7 +53,10 @@ let NERDTreeMinimalUI=1
 let NERDTreeDirArrows=1
 let NERDTreeShowLineNumbers=1
 let NERDTreeMapOpenInTab='\t'
-let g:NerdTreeGitStatusUseNerdFonts=1
+let g:NERDTreeGitStatusUseNerdFonts=1
+let g:NERDTreeFileExtensionHighlightFullName=1
+let g:NERDTreeExactMatchHighlightFullName=1
+let g:NERDTreePatternMatchHighlighFullName=1
 
 " tmux navigator
 let g:tmux_navigator_no_mapping=1
