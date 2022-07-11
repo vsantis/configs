@@ -1,11 +1,14 @@
 " HTML, JSX
 let g:closetag_filenames = '*.html,*.js,*.jsx,*.ts,*.tsx'
 
+" NERDCommenter
+let g:NERDCreateDefaultMappings=1
+
 " Lightlane
 let g:lightline = {
       \ 'active': {
-      \   'left': [['mode', 'paste'], [], ['relativepath', 'modified']],
-      \   'right': [['filetype', 'percent', 'lineinfo'], ['gitbranch']]
+      \   'left': [['mode', 'paste'],[],[],['filename', 'gitbranch']],
+      \   'right': [['lineinfo'],['percent'],['fileformat','fileencoding','filetype']]
       \ },
       \ 'inactive': {
       \   'left': [['inactive'], ['relativepath']],
@@ -16,14 +19,15 @@ let g:lightline = {
       \   'inactive': 'inactive'
       \ },
       \ 'component_function': {
-      \   'gitbranch': 'fugitive#head',
+      \   'gitbranch': 'gitbranch#name',
       \   'filetype': 'MyFiletype',
-      \   'fileformat': 'MyFileformat'
+      \   'fileformat': 'MyFileformat',
+      \   'filename': 'LightlineFileName'
       \ },
       \ 'colorscheme': 'gruvbox',
       \ 'subseparator': {
-      \   'left': '',
-      \   'right': ''
+      \   'left': '|',
+      \   'right': '|'
       \ }
       \}
 
@@ -33,6 +37,12 @@ endfunction
 
 function! MyFileformat()
       return winwidth(0) > 70 ? (&fileformat . ' ' . WebDevIconsGetFileFormatSymbol()) : ''
+endfunction
+
+function! LightlineFileName()
+      let filename = expand('%:t') !=# '' ? expand('%:t') : '[No Name]'
+      let modified = &modified ? ' +' : ''
+      return filename . modified
 endfunction
 
 " nerdtree

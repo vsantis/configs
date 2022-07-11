@@ -6,14 +6,17 @@ Plug 'sheerun/vim-polyglot'
 " status bar
 Plug 'maximbaz/lightline-ale'
 Plug 'itchyny/lightline.vim'
+Plug 'itchyny/vim-gitbranch'
 
 " themes
 Plug 'morhetz/gruvbox'
 Plug 'shinchu/lightline-gruvbox.vim'
+Plug 'overcache/NeoSolarized'
 
 " tree
 Plug 'preservim/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
 " typing
 Plug 'jiangmiao/auto-pairs'

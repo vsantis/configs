@@ -4,7 +4,7 @@ let mapleader=" "
 cnoreabbrev tree NERDTreeToggle
 cnoreabbrev find NERDTreeFind
 
-" split resize
+" resize split resize
 nnoremap <Leader>> 10<C-w>>
 nnoremap <Leader>< 10<C-w><
 
@@ -17,6 +17,9 @@ map <Leader>ag :Ag<CR>
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :q<CR>
 nnoremap <Leader>Q :q!<CR>
+nnoremap <Leader>wq :wq<CR>
+
+" map command to move code up or down
 
 " tmux navigation
 nnoremap <silent> <Leader><C-h> :TmuxNavigateLeft<cr>
@@ -64,7 +67,7 @@ autocmd CursorHoldI * :call <SID>show_hover_doc()
 autocmd CursorHold * :call <SID>show_hover_doc()
 
 " coc-lists
-nnoremap <silent> <space>d :<C-u>CocList diagnostics<cr>
+nnoremap <silent> <space>cd :<C-u>CocList diagnostics<cr>
 
 " coc-prettier
 map <Leader>f :Prettier<CR>
