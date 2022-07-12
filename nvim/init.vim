@@ -4,6 +4,10 @@ set numberwidth=1
 syntax on
 set relativenumber
 set encoding=utf8
+set termguicolors
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+"set background dark
 
 so ~/.vim/plugins.vim
 so ~/.vim/plugins-config.vim
@@ -13,6 +17,8 @@ so ~/.vim/maps.vim
 "colorscheme gruvbox
 "let g:gruvbox_contrast_dark = 'hard'
 colorscheme dracula
+autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
+autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
 highlight Normal ctermbg=NONE
 
 if !has('gui_running')

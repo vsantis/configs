@@ -2,6 +2,11 @@ call plug#begin('~/.vim/plugged')
 
 " syntax
 Plug 'sheerun/vim-polyglot'
+"Plug 'pangloss/vim-javascript'
+"Plug 'leafgarland/typescript-vim'
+"Plug 'peitalin/vim-jsx-typescript'
+"Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+"Plug 'jparise/vim-graphql'
 
 " status bar
 Plug 'maximbaz/lightline-ale'
@@ -12,7 +17,7 @@ Plug 'itchyny/vim-gitbranch'
 Plug 'morhetz/gruvbox'
 Plug 'shinchu/lightline-gruvbox.vim'
 Plug 'overcache/NeoSolarized'
-Plug 'dracula/vim', { 'name': 'dracula' }
+Plug 'dracula/vim', { 'as': 'dracula' }
 
 " tree
 Plug 'preservim/nerdtree'

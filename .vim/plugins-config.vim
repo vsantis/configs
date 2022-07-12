@@ -91,4 +91,7 @@ set updatetime=300
 " always show signcolumns
 set signcolumn=yes
 
+" disable italic for dracula
+let g:dracula_italic = 0
+
 let $FZF_DEFAULT_OPTS='--layout=reverse'
