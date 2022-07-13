@@ -19,7 +19,7 @@ let g:lightline = {
       \   'inactive': 'inactive'
       \ },
       \ 'component_function': {
-      \   'gitbranch': 'gitbranch#name',
+      \   'gitbranch': 'FugitiveHead',
       \   'filetype': 'MyFiletype',
       \   'fileformat': 'MyFileformat',
       \   'filename': 'LightlineFileName'
@@ -69,7 +69,9 @@ let g:coc_global_extensions = [
       \ 'coc-json',
       \ 'coc-yaml',
       \ 'coc-html',
-      \ 'coc-lists'
+      \ 'coc-lists',
+      \ 'coc-css',
+      \ 'coc-styled-components'
       \]
 
 if isdirectory('./node_modules') && isdirectory('./node_modules/prettier')

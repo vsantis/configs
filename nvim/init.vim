@@ -1,8 +1,18 @@
 set number
+syntax on
+set autoread
 set mouse=a
 set numberwidth=1
-syntax on
 set relativenumber
+set history=1000
+set undolevels=1000
+set wildignore=*.swp,*.bak,*.pyc,*.class
+set visualbell
+set noerrorbells
+set showmatch
+set title
+set nobackup
+set noswapfile
 set encoding=utf8
 set termguicolors
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
