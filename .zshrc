@@ -105,5 +105,6 @@ export TERM=xterm-256color
 alias ll="ls -l"
 alias lla="ls -la"
 alias sshAdd="ssh-add --apple-use-keychain ~/.ssh/scotiabank_rsa"
+alias nv="nvim"
 
 eval "$(starship init zsh)"
