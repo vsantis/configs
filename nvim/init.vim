@@ -19,9 +19,9 @@ let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 "set background dark
 
-so ~/.vim/plugins.vim
-so ~/.vim/plugins-config.vim
-so ~/.vim/maps.vim
+so ~/.config/nvim/plugins.vim
+so ~/.config/nvim/plugins-config.vim
+so ~/.config/nvim/maps.vim
 
 "colorscheme NeoSolarized
 "colorscheme gruvbox
