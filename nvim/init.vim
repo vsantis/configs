@@ -26,7 +26,8 @@ so ~/.config/nvim/maps.vim
 "colorscheme NeoSolarized
 "colorscheme gruvbox
 "let g:gruvbox_contrast_dark = 'hard'
-colorscheme dracula
+"colorscheme dracula
+colorscheme nord
 autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
 autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
 highlight Normal ctermbg=NONE

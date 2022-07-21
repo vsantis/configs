@@ -9,11 +9,13 @@ cnoreabbrev gstatus vertical G
 nnoremap <Leader>> 10<C-w>>
 nnoremap <Leader>< 10<C-w><
 
-" plugs
+" nerdtre
 map <Leader>tf :NERDTreeFind<CR>
 map <Leader>tt :NERDTreeToggle<CR>
-map <Leader>p :Files<CR>
-map <Leader>ag :Ag<CR>
+" fzf
+map <Leader>ff :Files<CR>
+map <Leader>fg :Rg<CR>
+map <Leader>ob :Buffers<cr>
 
 nnoremap <Leader>w :w<CR>
 nnoremap <Leader>q :q<CR>
@@ -43,9 +45,6 @@ nmap <Leader>do <Plug>(coc-codeaction)
 
 " remap keys from rename symbol
 nmap <Leader>rn <Plug>(coc-rename)
-
-" buffers
-map <Leader>ob :Buffers<cr>
 
 " vim-plug
 map <Leader>pi :PlugInstall<cr>

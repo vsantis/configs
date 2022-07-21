@@ -4,11 +4,17 @@ let g:closetag_filenames = '*.html,*.js,*.jsx,*.ts,*.tsx'
 " NERDCommenter
 let g:NERDCreateDefaultMappings=1
 
+" Nord Theme config
+let g:nord_uniform_status_lines=1
+let g:nord_uniform_diff_background=1
 " Lightlane
+"let g:lightline.component_expand = {
+      "\ 'asyncrun_status': 'lightline#asyncrun#status'
+"}
 let g:lightline = {
       \ 'active': {
-      \   'left': [['mode', 'paste'],[],[],['filename', 'gitbranch']],
-      \   'right': [['lineinfo'],['percent'],['fileformat','fileencoding','filetype']]
+      \   'left': [['mode','paste'],['filename', 'gitbranch']],
+      \   'right': [['filetype'],['percent','lineinfo'],['fileencoding'], ['asyncrun_status']]
       \ },
       \ 'inactive': {
       \   'left': [['inactive'], ['relativepath']],
@@ -22,9 +28,12 @@ let g:lightline = {
       \   'gitbranch': 'FugitiveHead',
       \   'filetype': 'MyFiletype',
       \   'fileformat': 'MyFileformat',
-      \   'filename': 'LightlineFileName'
+      \   'filename': 'LightlineFileName',
       \ },
-      \ 'colorscheme': 'dracula',
+      \ 'component_expand': {
+      \   'asyncrun_status': 'lightline#asyncrun#status'
+      \},
+      \ 'colorscheme': 'nord',
       \ 'subseparator': {
       \   'left': '|',
       \   'right': '|'
@@ -40,6 +49,7 @@ function! MyFileformat()
 endfunction
 
 function! LightlineFileName()
+      "let fileIcon = strlen(&filetype) ? WebDevIconsGetFileTypeSymbol() . ' ' : ''
       let filename = expand('%:t') !=# '' ? expand('%:t') : '[No Name]'
       let modified = &modified ? ' +' : ''
       return filename . modified
@@ -71,7 +81,10 @@ let g:coc_global_extensions = [
       \ 'coc-html',
       \ 'coc-lists',
       \ 'coc-css',
-      \ 'coc-styled-components'
+      \ 'coc-styled-components',
+      \ 'coc-jest',
+      \ 'coc-lua',
+      \ 'coc-python'
       \]
 
 if isdirectory('./node_modules') && isdirectory('./node_modules/prettier')

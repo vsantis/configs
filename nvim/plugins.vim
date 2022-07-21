@@ -12,12 +12,14 @@ Plug 'sheerun/vim-polyglot'
 Plug 'maximbaz/lightline-ale'
 Plug 'itchyny/lightline.vim'
 Plug 'itchyny/vim-gitbranch'
+Plug 'albertomontesg/lightline-asyncrun'
 
 " themes
 Plug 'morhetz/gruvbox'
 Plug 'shinchu/lightline-gruvbox.vim'
 Plug 'overcache/NeoSolarized'
 Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'arcticicestudio/nord-vim'
 
 " tree
 Plug 'preservim/nerdtree'

@@ -8,11 +8,15 @@
     "css"
   ],
   "eslint.autoFixOnSave": true,
-  "eslint.filetypes": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact"
-  ],
-  "coc.preferences.messageLevel": "error"
+  "coc.preferences.messageLevel": "error",
+  "prettier.printWidth": 80,
+  "prettier.tabWidth": 2,
+  "prettier.useTabs": false,
+  "prettier.semi": true,
+  "prettier.singleQuote": true,
+  "prettier.jsxSingleQuote": true,
+  "prettier.trailingComma": "es5",
+  "prettier.bracketSpacing": false,
+  "prettier.bracketSameLine": true,
+  "prettier.arrowParens": "always"
 }
