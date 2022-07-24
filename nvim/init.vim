@@ -17,7 +17,6 @@ set encoding=utf8
 set termguicolors
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
-"set background dark
 
 so ~/.config/nvim/plugins.vim
 so ~/.config/nvim/plugins-config.vim
@@ -26,8 +25,8 @@ so ~/.config/nvim/maps.vim
 "colorscheme NeoSolarized
 "colorscheme gruvbox
 "let g:gruvbox_contrast_dark = 'hard'
-"colorscheme dracula
-colorscheme nord
+colorscheme dracula
+"colorscheme nord
 autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
 autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
 highlight Normal ctermbg=NONE

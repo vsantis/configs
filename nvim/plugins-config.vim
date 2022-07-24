@@ -33,7 +33,7 @@ let g:lightline = {
       \ 'component_expand': {
       \   'asyncrun_status': 'lightline#asyncrun#status'
       \},
-      \ 'colorscheme': 'nord',
+      \ 'colorscheme': 'dracula',
       \ 'subseparator': {
       \   'left': '|',
       \   'right': '|'
@@ -84,7 +84,8 @@ let g:coc_global_extensions = [
       \ 'coc-styled-components',
       \ 'coc-jest',
       \ 'coc-lua',
-      \ 'coc-python'
+      \ 'coc-python',
+      \ 'coc-pyright'
       \]
 
 if isdirectory('./node_modules') && isdirectory('./node_modules/prettier')
