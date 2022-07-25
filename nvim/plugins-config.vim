@@ -4,13 +4,7 @@ let g:closetag_filenames = '*.html,*.js,*.jsx,*.ts,*.tsx'
 " NERDCommenter
 let g:NERDCreateDefaultMappings=1
 
-" Nord Theme config
-let g:nord_uniform_status_lines=1
-let g:nord_uniform_diff_background=1
-" Lightlane
-"let g:lightline.component_expand = {
-      "\ 'asyncrun_status': 'lightline#asyncrun#status'
-"}
+" Lightline
 let g:lightline = {
       \ 'active': {
       \   'left': [['mode','paste'],['filename', 'gitbranch']],
@@ -49,7 +43,6 @@ function! MyFileformat()
 endfunction
 
 function! LightlineFileName()
-      "let fileIcon = strlen(&filetype) ? WebDevIconsGetFileTypeSymbol() . ' ' : ''
       let filename = expand('%:t') !=# '' ? expand('%:t') : '[No Name]'
       let modified = &modified ? ' +' : ''
       return filename . modified
@@ -70,31 +63,6 @@ let g:NERDTreePatternMatchHighlighFullName=1
 
 " tmux navigator
 let g:tmux_navigator_no_mapping=1
-
-" coc
-let g:coc_global_extensions = [
-      \ 'coc-tsserver',
-      \ 'coc-webview',
-      \ 'coc-markdown-preview-enhanced',
-      \ 'coc-json',
-      \ 'coc-yaml',
-      \ 'coc-html',
-      \ 'coc-lists',
-      \ 'coc-css',
-      \ 'coc-styled-components',
-      \ 'coc-jest',
-      \ 'coc-lua',
-      \ 'coc-python',
-      \ 'coc-pyright'
-      \]
-
-if isdirectory('./node_modules') && isdirectory('./node_modules/prettier')
-      let g:coc_global_extensions += ['coc-prettier']
-endif
-
-if isdirectory('./node_modules') && isdirectory('./node_modules/eslint')
-      let g:coc_global_extensions += ['coc-eslint']
-endif
 
 autocmd FileType scss setl iskeyword+=@-@
 

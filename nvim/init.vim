@@ -21,6 +21,11 @@ let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 so ~/.config/nvim/plugins.vim
 so ~/.config/nvim/plugins-config.vim
 so ~/.config/nvim/maps.vim
+"lua require('maps')
+lua require('plugins-config.lspconfigrc')
+lua require('plugins-config.treesitterrc')
+lua require('plugins-config.lspsagarc')
+
 
 "colorscheme NeoSolarized
 "colorscheme gruvbox
@@ -41,7 +46,7 @@ set clipboard=unnamedplus
 "set guicursor=n-v:block
 "et background=dark
 " prettier
-command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
+"command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')
 
 filetype plugin on
 filetype plugin indent on

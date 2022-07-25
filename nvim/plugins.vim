@@ -1,14 +1,5 @@
 call plug#begin('~/.config/nvim/plugged')
 
-" syntax
-Plug 'sheerun/vim-polyglot'
-Plug 'vim-scripts/pylint.vim'
-"Plug 'pangloss/vim-javascript'
-"Plug 'leafgarland/typescript-vim'
-"Plug 'peitalin/vim-jsx-typescript'
-"Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
-"Plug 'jparise/vim-graphql'
-
 " status bar
 Plug 'maximbaz/lightline-ale'
 Plug 'itchyny/lightline.vim'
@@ -16,11 +7,8 @@ Plug 'itchyny/vim-gitbranch'
 Plug 'albertomontesg/lightline-asyncrun'
 
 " themes
-Plug 'morhetz/gruvbox'
-Plug 'shinchu/lightline-gruvbox.vim'
 Plug 'overcache/NeoSolarized'
 Plug 'dracula/vim', { 'as': 'dracula' }
-Plug 'arcticicestudio/nord-vim'
 
 " tree
 Plug 'preservim/nerdtree'
@@ -31,14 +19,14 @@ Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'jiangmiao/auto-pairs'
 Plug 'alvan/vim-closetag'
 
-" autocomplete
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
 " tmux
 Plug 'preservim/vimux'
 Plug 'christoomey/vim-tmux-navigator'
 
 " ide
+Plug 'neovim/nvim-lspconfig'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'glepnir/lspsaga.nvim', { 'branch': 'main' }
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'preservim/nerdcommenter'
@@ -46,5 +34,9 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'Yggdroot/indentLine'
+Plug 'hrsh7th/nvim-cmp'
+Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'saadparwaiz1/cmp_luasnip'
+Plug 'L3MON4D3/LuaSnip'
 
 call plug#end()
